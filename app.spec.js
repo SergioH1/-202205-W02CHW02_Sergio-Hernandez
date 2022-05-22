@@ -83,6 +83,114 @@ describe('Given the function gameOfLive', () => {
         const expected = gameOfLive(arrayCheck);
         expect(expected).toEqual(result);
       });
+      test('Then should be diferent array', () => {
+        let arrayCheck = [
+          [1, 0, 0, 0, 1],
+          [0, 1, 0, 1, 0],
+          [0, 0, 1, 0, 0],
+          [0, 1, 0, 1, 0],
+          [1, 0, 0, 0, 1],
+        ];
+        let result = [
+          [0, 0, 0, 0, 0],
+          [0, 1, 1, 1, 0],
+          [0, 1, 0, 1, 0],
+          [0, 1, 1, 1, 0],
+          [0, 0, 0, 0, 0],
+        ];
+        const expected = gameOfLive(arrayCheck);
+        expect(expected).toEqual(result);
+      });
+      test('Then should be diferent array', () => {
+        let arrayCheck = [
+          [0, 0, 0, 0, 0],
+          [0, 1, 1, 1, 0],
+          [0, 1, 0, 1, 0],
+          [0, 1, 1, 1, 0],
+          [0, 0, 0, 0, 0],
+        ];
+        let result = [
+          [0, 0, 1, 0, 0],
+          [0, 1, 0, 1, 0],
+          [1, 0, 0, 0, 1],
+          [0, 1, 0, 1, 0],
+          [0, 0, 1, 0, 0],
+        ];
+        const expected = gameOfLive(arrayCheck);
+        expect(expected).toEqual(result);
+      });
+      test('Then should be diferent array', () => {
+        let arrayCheck = [
+          [0, 0, 1, 0, 0],
+          [0, 1, 0, 1, 0],
+          [1, 0, 0, 0, 1],
+          [0, 1, 0, 1, 0],
+          [0, 0, 1, 0, 0],
+        ];
+        let result = [
+          [0, 0, 1, 0, 0],
+          [0, 1, 1, 1, 0],
+          [1, 1, 0, 1, 1],
+          [0, 1, 1, 1, 0],
+          [0, 0, 1, 0, 0],
+        ];
+        const expected = gameOfLive(arrayCheck);
+        expect(expected).toEqual(result);
+      });
+      test('Then should be diferent array', () => {
+        let arrayCheck = [
+          [0, 0, 1, 0, 0],
+          [0, 1, 1, 1, 0],
+          [1, 1, 0, 1, 1],
+          [0, 1, 1, 1, 0],
+          [0, 0, 1, 0, 0],
+        ];
+        let result = [
+          [0, 1, 1, 1, 0],
+          [1, 0, 0, 0, 1],
+          [1, 0, 0, 0, 1],
+          [1, 0, 0, 0, 1],
+          [0, 1, 1, 1, 0],
+        ];
+        const expected = gameOfLive(arrayCheck);
+        expect(expected).toEqual(result);
+      });
+      test('Then should be diferent array', () => {
+        let arrayCheck = [
+          [0, 1, 1, 1, 0],
+          [1, 0, 0, 0, 1],
+          [1, 0, 0, 0, 1],
+          [1, 0, 0, 0, 1],
+          [0, 1, 1, 1, 0],
+        ];
+        let result = [
+          [0, 1, 1, 1, 0],
+          [1, 0, 1, 0, 1],
+          [1, 1, 0, 1, 1],
+          [1, 0, 1, 0, 1],
+          [0, 1, 1, 1, 0],
+        ];
+        const expected = gameOfLive(arrayCheck);
+        expect(expected).toEqual(result);
+      });
+      test('Then should be diferent array', () => {
+        let arrayCheck = [
+          [0, 1, 1, 1, 0],
+          [1, 0, 1, 0, 1],
+          [1, 1, 0, 1, 1],
+          [1, 0, 1, 0, 1],
+          [0, 1, 1, 1, 0],
+        ];
+        let result = [
+          [0, 1, 1, 1, 0],
+          [1, 0, 0, 0, 1],
+          [1, 0, 0, 0, 1],
+          [1, 0, 0, 0, 1],
+          [0, 1, 1, 1, 0],
+        ];
+        const expected = gameOfLive(arrayCheck);
+        expect(expected).toEqual(result);
+      });
     });
     describe('When receive array ramdon', () => {
       test('Then should be diferent array', () => {

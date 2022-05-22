@@ -1,5 +1,4 @@
 import { ramdonCellBoard } from './RamdonCellBoard.js';
-
 export function gameOfLive(array) {
   const cellBoardClone = array.map((array) => [...array]);
   let livingCells = 0;
@@ -94,6 +93,3 @@ export function gameOfLive(array) {
   }
   return cellBoardClone;
 }
-
-// console.log(cellBoard);
-// console.log(gameOfLive(cellBoard));
