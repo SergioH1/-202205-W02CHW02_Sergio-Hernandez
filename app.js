@@ -1,10 +1,4 @@
-// const cellBoard = [
-//   [0, 0, 0, 0, 0],
-//   [0, 0, 1, 0, 0],
-//   [0, 0, 1, 0, 0],
-//   [0, 0, 1, 0, 0],
-//   [0, 0, 0, 0, 0],
-// ];
+import { ramdonCellBoard } from './RamdonCellBoard.js';
 
 export function gameOfLive(array) {
   const cellBoardClone = array.map((array) => [...array]);
